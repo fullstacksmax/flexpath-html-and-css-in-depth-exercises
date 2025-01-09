@@ -33,3 +33,20 @@ header {
 input[type="text"]{
     border-color: blue
 }
+
+nav li {
+    display: inline;
+    padding: 1%;
+}
+
+@media (width < 600px) {
+    body {
+        background-color: white;
+    }
+}
+
+.navbar {
+    flex-direction: row;
+    color: white
+}
+
