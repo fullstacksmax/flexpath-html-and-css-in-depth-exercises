@@ -34,9 +34,10 @@ input[type="text"]{
     border-color: blue
 }
 
-nav li {
+nav ul li {
     display: inline;
     padding: 1%;
+    
 }
 
 @media (width < 600px) {
@@ -46,7 +47,15 @@ nav li {
 }
 
 .navbar {
-    flex-direction: row;
-    color: white
+    display: flex;
+    justify-content: space-around;
+    background-color: darkgrey;
+    
 }
 
+.navbar a {
+    justify-items: center;
+    padding: 25px, 25px, 25px, 25px;
+    color: white;
+    
+}
