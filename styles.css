@@ -21,3 +21,15 @@ header {
     padding: 50px;
     text-align: center;
 }
+
+.highlight {
+    color: green;
+}
+
+#main-title {
+    font-size: 36px;
+}
+
+input[type="text"]{
+    border-color: blue
+}
