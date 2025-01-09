@@ -1,0 +1,23 @@
+h1{
+    color: blue;
+    font-family: arial, sans-serif;
+}
+
+.container {
+    border: dotted;
+    padding: 1%;
+    margin: 1%;
+
+}
+
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-image: url("https://imagedelivery.net/LBWXYQ-XnKSYxbZ-NuYGqQ/0fb1a67e-794b-49b7-e7ac-62730755b000/avatarhd");
+    background-size: cover;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
