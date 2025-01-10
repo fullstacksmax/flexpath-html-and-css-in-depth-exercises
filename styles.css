@@ -1,4 +1,4 @@
-h1{
+h1 {
     color: blue;
     font-family: arial, sans-serif;
 }
@@ -30,14 +30,14 @@ header {
     font-size: 36px;
 }
 
-input[type="text"]{
+input[type="text"] {
     border-color: blue
 }
 
 nav ul li {
     display: inline;
     padding: 1%;
-    
+
 }
 
 @media (width < 600px) {
@@ -50,12 +50,56 @@ nav ul li {
     display: flex;
     justify-content: space-around;
     background-color: darkgrey;
-    
+
+    a:hover {
+        background-color: aqua;
+        transition-duration: 0.3s;
+
+    }
+
+    a:visited {
+        color: purple;
+    }
+
 }
 
 .navbar a {
     justify-items: center;
     padding: 25px, 25px, 25px, 25px;
     color: white;
-    
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    height: auto;
+    width: 100%;
+}
+
+@media(width < 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+p {
+    color: blue;
+}
+
+.highlight p {
+    color: green;
 }
