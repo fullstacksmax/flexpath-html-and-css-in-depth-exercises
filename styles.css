@@ -40,7 +40,7 @@ nav ul li {
 
 }
 
-@media (width < 600px) {
+@media (width < 500px) {
     body {
         background-color: white;
     }
@@ -81,9 +81,20 @@ nav ul li {
     width: 100%;
 }
 
-@media(width < 600px) {
+@media(width < 500px) {
     .gallery {
         grid-template-columns: 1fr;
+    
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        display: none;
+    }
+    .hideOnMobile{
+        display: none;
+        flex-direction: column;
     }
 }
 
@@ -102,4 +113,55 @@ p {
 
 .highlight p {
     color: green;
+}
+
+.hamburger {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    height: 25vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgb(202, 133, 44);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hamburger li {
+    width: 100%;
+
+}
+
+.hamburger a {
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+
+
+@media(max-width: 500px) {
+    .sidebar{
+        width:100%
+    }
+    .navbar {
+        display: none;
+    }
+    
+}
+
+.menu-button {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+@media(width > 500px){
+    .hamburger{
+        display: none;
+    }
 }
